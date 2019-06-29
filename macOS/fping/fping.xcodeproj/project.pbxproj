@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8246521822C7B793000FC130 /* ToolbarItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8246521722C7B793000FC130 /* ToolbarItemIcon.png */; };
+		8260671C22C7246D0009E47C /* fping.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 8260671B22C7246D0009E47C /* fping.entitlements */; };
+		8260671E22C7246D0009E47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260671D22C7246D0009E47C /* AppDelegate.swift */; };
+		8260672122C7246D0009E47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8260671F22C7246D0009E47C /* Main.storyboard */; };
+		8260672322C7246D0009E47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260672222C7246D0009E47C /* ViewController.swift */; };
+		8260672522C7246F0009E47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8260672422C7246F0009E47C /* Assets.xcassets */; };
+		8260672C22C7246F0009E47C /* fping Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8260672B22C7246F0009E47C /* fping Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8260673122C7246F0009E47C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8260673022C7246F0009E47C /* Cocoa.framework */; };
+		8260673422C7246F0009E47C /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260673322C7246F0009E47C /* SafariExtensionHandler.swift */; };
+		8260673622C7246F0009E47C /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260673522C7246F0009E47C /* SafariExtensionViewController.swift */; };
+		8260673922C7246F0009E47C /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8260673722C7246F0009E47C /* SafariExtensionViewController.xib */; };
+		8260673C22C7246F0009E47C /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8260673B22C7246F0009E47C /* script.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8260672D22C7246F0009E47C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8260671022C7246D0009E47C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8260672A22C7246F0009E47C;
+			remoteInfo = "fping Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8260674522C7246F0009E47C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8260672C22C7246F0009E47C /* fping Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8246521722C7B793000FC130 /* ToolbarItemIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ToolbarItemIcon.png; path = fping/Assets.xcassets/AppIcon.appiconset/ToolbarItemIcon.png; sourceTree = SOURCE_ROOT; };
+		8260671822C7246D0009E47C /* fping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8260671B22C7246D0009E47C /* fping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fping.entitlements; sourceTree = "<group>"; };
+		8260671D22C7246D0009E47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8260672022C7246D0009E47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8260672222C7246D0009E47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8260672422C7246F0009E47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8260672622C7246F0009E47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8260672B22C7246F0009E47C /* fping Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "fping Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8260673022C7246F0009E47C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8260673322C7246F0009E47C /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		8260673522C7246F0009E47C /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		8260673822C7246F0009E47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		8260673A22C7246F0009E47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8260673B22C7246F0009E47C /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		8260673F22C7246F0009E47C /* fping_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fping_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8260671522C7246D0009E47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8260672822C7246F0009E47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260673122C7246F0009E47C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8260670F22C7246D0009E47C = {
+			isa = PBXGroup;
+			children = (
+				8260671A22C7246D0009E47C /* fping */,
+				8260673222C7246F0009E47C /* fping Extension */,
+				8260672F22C7246F0009E47C /* Frameworks */,
+				8260671922C7246D0009E47C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8260671922C7246D0009E47C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8260671822C7246D0009E47C /* fping.app */,
+				8260672B22C7246F0009E47C /* fping Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8260671A22C7246D0009E47C /* fping */ = {
+			isa = PBXGroup;
+			children = (
+				8260671B22C7246D0009E47C /* fping.entitlements */,
+				8260671D22C7246D0009E47C /* AppDelegate.swift */,
+				8260671F22C7246D0009E47C /* Main.storyboard */,
+				8260672222C7246D0009E47C /* ViewController.swift */,
+				8260672422C7246F0009E47C /* Assets.xcassets */,
+				8260672622C7246F0009E47C /* Info.plist */,
+			);
+			path = fping;
+			sourceTree = "<group>";
+		};
+		8260672F22C7246F0009E47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8260673022C7246F0009E47C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8260673222C7246F0009E47C /* fping Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8260673322C7246F0009E47C /* SafariExtensionHandler.swift */,
+				8260673522C7246F0009E47C /* SafariExtensionViewController.swift */,
+				8260673722C7246F0009E47C /* SafariExtensionViewController.xib */,
+				8260673A22C7246F0009E47C /* Info.plist */,
+				8260673B22C7246F0009E47C /* script.js */,
+				8246521722C7B793000FC130 /* ToolbarItemIcon.png */,
+				8260673F22C7246F0009E47C /* fping_Extension.entitlements */,
+			);
+			path = "fping Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8260671722C7246D0009E47C /* fping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8260674622C7246F0009E47C /* Build configuration list for PBXNativeTarget "fping" */;
+			buildPhases = (
+				8260671422C7246D0009E47C /* Sources */,
+				8260671522C7246D0009E47C /* Frameworks */,
+				8260671622C7246D0009E47C /* Resources */,
+				8260674522C7246F0009E47C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8260672E22C7246F0009E47C /* PBXTargetDependency */,
+			);
+			name = fping;
+			productName = fping;
+			productReference = 8260671822C7246D0009E47C /* fping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8260672A22C7246F0009E47C /* fping Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8260674222C7246F0009E47C /* Build configuration list for PBXNativeTarget "fping Extension" */;
+			buildPhases = (
+				8260672722C7246F0009E47C /* Sources */,
+				8260672822C7246F0009E47C /* Frameworks */,
+				8260672922C7246F0009E47C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fping Extension";
+			productName = "fping Extension";
+			productReference = 8260672B22C7246F0009E47C /* fping Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8260671022C7246D0009E47C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Joubin Jabbari";
+				TargetAttributes = {
+					8260671722C7246D0009E47C = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
+					};
+					8260672A22C7246F0009E47C = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8260671322C7246D0009E47C /* Build configuration list for PBXProject "fping" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8260670F22C7246D0009E47C;
+			productRefGroup = 8260671922C7246D0009E47C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8260671722C7246D0009E47C /* fping */,
+				8260672A22C7246F0009E47C /* fping Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8260671622C7246D0009E47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260671C22C7246D0009E47C /* fping.entitlements in Resources */,
+				8260672522C7246F0009E47C /* Assets.xcassets in Resources */,
+				8260672122C7246D0009E47C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8260672922C7246F0009E47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260673922C7246F0009E47C /* SafariExtensionViewController.xib in Resources */,
+				8246521822C7B793000FC130 /* ToolbarItemIcon.png in Resources */,
+				8260673C22C7246F0009E47C /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8260671422C7246D0009E47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260672322C7246D0009E47C /* ViewController.swift in Sources */,
+				8260671E22C7246D0009E47C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8260672722C7246F0009E47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260673622C7246F0009E47C /* SafariExtensionViewController.swift in Sources */,
+				8260673422C7246F0009E47C /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8260672E22C7246F0009E47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8260672A22C7246F0009E47C /* fping Extension */;
+			targetProxy = 8260672D22C7246F0009E47C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8260671F22C7246D0009E47C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8260672022C7246D0009E47C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8260673722C7246F0009E47C /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8260673822C7246F0009E47C /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8260674022C7246F0009E47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8260674122C7246F0009E47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8260674322C7246F0009E47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "fping Extension/fping_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V3E82SCH9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "fping Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.jabbari.fping-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8260674422C7246F0009E47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "fping Extension/fping_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V3E82SCH9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "fping Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.jabbari.fping-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8260674722C7246F0009E47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fping/fping.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V3E82SCH9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = fping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jabbari.fping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8260674822C7246F0009E47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fping/fping.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9V3E82SCH9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = fping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jabbari.fping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8260671322C7246D0009E47C /* Build configuration list for PBXProject "fping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8260674022C7246F0009E47C /* Debug */,
+				8260674122C7246F0009E47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8260674222C7246F0009E47C /* Build configuration list for PBXNativeTarget "fping Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8260674322C7246F0009E47C /* Debug */,
+				8260674422C7246F0009E47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8260674622C7246F0009E47C /* Build configuration list for PBXNativeTarget "fping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8260674722C7246F0009E47C /* Debug */,
+				8260674822C7246F0009E47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8260671022C7246D0009E47C /* Project object */;
+}

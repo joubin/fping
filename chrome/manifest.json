@@ -1,0 +1,15 @@
+{
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "content_security_policy": " default-src 'self'",
+   "description": "This extension will remove ping from \u003Ca href> tags in html",
+   "icons": {
+      "256": "logo.png"
+   },
+   "manifest_version": 2,
+   "name": "fping",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.0"
+}
