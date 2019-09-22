@@ -6,7 +6,10 @@ function RemovePing(event)
     var count = 0
     for (var i = 0, l = hrefs.length; i < l; i++)
     {
-        count += 1
+        if(hrefs[i].hasAttribute("ping")){
+            count += 1
+        }
+        
         hrefs[i].removeAttribute("ping")
     }
     safari.extension.dispatchMessage(count)
